@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Mason Type</title>
+</head>
+<body>
+    <div class="header">Masons type tester</div>
+
+
+
+    <div class="container-fluid" id="page1">
+        <div class="row">
+            <div class="col-4">
+                <div class="inputDescription">
+                    The text that is input will be used as a prompt for your typing test.
+                    The typing test will return your WPM along with accuracy.
+                </div>
+            </div>
+            <div class="col"></div>
+            <div class="col">
+                <div class="row">click bellow to change prompt</div>
+                <div class="row mt-3"id="promptPreview">prompt preview</div>
+            </div>
+        </div>
+        <div class="row">  
+            <div class="col">            
+                <button class="btn btn-primary mt-3" type="button" id="startButton">Begin your typing test</button>    
+            </div>
+            <div class="col">
+              
+            </div> 
+        </div>
+    </div>
+
+    <div class="container-fluid" id="page2" style="display: none;">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <div id="textDisplay" class="box"></div>
+            </div>
+            <div class="col">
+                <div id="timerDisplay"></div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+   
+    <div class="container-fluid" id="finish" style="display: none;" >
+        <div class="row">
+            <div class="col">
+                <div>Youre Results</div>
+                <div id="results">place holder for users information</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3" id="replayTest"><button class="btn btn-primary mt-3 ">Replay Test</button></div>
+            <div class="col" id="newTest"><button class="btn btn-primary mt-3">New Test</button></div>
+        </div>
+
+        
+    </div>
+
+    <script src="typerScript.js"></script>
+    <script src="main.js"></script>
+   
+</body>
+</html>

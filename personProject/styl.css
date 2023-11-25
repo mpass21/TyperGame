@@ -1,0 +1,27 @@
+
+
+.blue {
+
+    background-color: red;
+}
+
+.box {
+    width: 120px;
+    background-color: #3498db; /* Set the background color */
+  
+
+    border: 2px solid #2980b9; /* Add a border with color */
+    white-space: pre;
+}
+.header {
+    padding: 2px;
+    padding-left: 10px;
+    background-color: #3498db;
+    color: white;
+    height: 30px;
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+.visible {
+    display: block !important;
+}
